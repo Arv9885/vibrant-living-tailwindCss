@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Vite App</title>
+  </head>
+  <body class="bg-main">
+    <!-- nav bar -->
+    <nav
+      class="flex justify-around items-center sticky top-0 bg-nav z-50 tablet:justify-between tablet:px-14 laptop:justify-between laptop:px-20 lg:justify-around desktop:h-12 desktop:py-3"
+    >
+      <a href="#" class="mobile:visible tablet:visible lg:hidden laptop:hidden"
+        ><img src="images/Frame 767.png" alt="#"
+      /></a>
+
+      <a href="#" class="sm:hidden mobile:hidden tablet:hidden laptop:visible"
+        ><img src="images/Logo with Background.png" alt="#"
+      /></a>
+
+      <!-- nav   at large screens -->
+      <ul
+        class="inline-flex gap-3 justify-evenly mobile:hidden tablet:hidden sm:hidden laptop:w-6/12 laptop:justify-evenly lg:w-6/12 lg:justify-evenly"
+      >
+        <li><a href="#">CAFE</a></li>
+        <li><a href="#">STORE</a></li>
+        <li><a href="#">GIFTING</a></li>
+        <li><a href="#">RECIPES</a></li>
+        <li><a href="#">THIS IS US</a></li>
+      </ul>
+      <div class="flex justify-center items-center gap-2">
+        <a class="hover:-scale-x-125 ease-in-out duration-300" href="#"
+          ><img src="images/shopping-cart.png" alt="cart "
+        /></a>
+        <a class="hover:scale-x-110 ease-in-out duration-300" href="#"
+          ><img src="images/frame.png" alt="#"
+        /></a>
+        <a href="#" class="lg:hidden hover:scale-110 ease-in-out duration-300"
+          ><img src="images/menu.png" alt=""
+        /></a>
+      </div>
+    </nav>
+
+    <!-- img -->
+    <div class="lg:flex lg:flex-row-reverse">
+      <div class="flex items-center justify-center mt-8">
+        <img
+          class="lg:absolute lg:left-2/4 lg:top-1/4 lg:h-4/6 lg:-z-40 lg:max-h-lvh"
+          src="images/Group 1012.png"
+          alt="Vibrant package"
+        />
+      </div>
+      <!-- heading  -->
+      <div
+        class="large-screen lg:flex flex-col justify-items-start items-start lg:w-[90%] lg:m-auto"
+      >
+        <header>
+          <h1
+            class="text-center font-family lg:text-8xl lg:text-left lg:pt-24 lg:max-w-xl lg:m-auto"
+          >
+            Pumpkin & Sesame Chikkis
+          </h1>
+          <div
+            class="flex items-center gap-3 mt-5 justify-center lg:justify-start pb-4"
+          >
+            <div class="flex items-start space-x-1" id="star-container">
+              <input
+                type="radio"
+                id="star1"
+                name="rating"
+                value="1"
+                class="hidden"
+              />
+              <label for="star1" class="star"></label>
+              <input
+                type="radio"
+                id="star2"
+                name="rating"
+                value="2"
+                class="hidden"
+              />
+              <label for="star2" class="star"></label>
+              <input
+                type="radio"
+                id="star3"
+                name="rating"
+                value="3"
+                class="hidden"
+              />
+              <label for="star3" class="star"></label>
+              <input
+                type="radio"
+                id="star4"
+                name="rating"
+                value="4"
+                class="hidden"
+              />
+              <label for="star4" class="star"></label>
+              <input
+                type="radio"
+                id="star5"
+                name="rating"
+                value="5"
+                class="hidden"
+              />
+              <label for="star5" class="star"></label>
+            </div>
+            <!-- Display Selected Rating -->
+            <div class="flex items-center justify-center">
+              <p
+                id="rating-display"
+                class="font-mono font-medium text-xs lg:font-semibold lg:text-base"
+              >
+                12 REVIEWS
+              </p>
+            </div>
+          </div>
+        </header>
+        <!-- price and quantity -->
+        <section class="quantity mb-6">
+          <p
+            class="ml-2 text-sm font-mono opacity-50 from-neutral-500 lg:pb-3 lg:opacity-65"
+          >
+            SIZE
+          </p>
+          <div class="flex gap-4 ml-3">
+            <div class="qty-1">
+              <input
+                type="radio"
+                name="selector"
+                id="less-qty"
+                class="peer/radioooo hidden"
+              />
+              <label
+                for="less-qty"
+                class="relative min-w-20 text-black font-mono cursor-pointer inline-flex gap-1 py-2 px-3 ring-[#F8A271] ring-2 rounded-full checked:text-slate-300 peer-checked/radioooo:bg-[#F8A271] peer-checked/radioooo:text-[#362918] hover:scale-x-110 ease-in-out duration-300"
+              >
+                300g - ₹250</label
+              >
+            </div>
+            <div class="qty-2">
+              <input
+                type="radio"
+                name="selector"
+                id="more-qty"
+                class="peer/radiooooo hidden"
+              />
+              <label
+                for="more-qty"
+                class="relative min-w-20 text-black font-mono cursor-pointer inline-flex gap-1 py-2 px-3 ring-[#F8A271] ring-2 rounded-full checked:text-slate-300 peer-checked/radiooooo:bg-[#F8A271] peer-checked/radiooooo:text-[#362918] hover:scale-x-110 ease-in-out duration-300"
+              >
+                600g - ₹450
+              </label>
+            </div>
+          </div>
+          <p class="ml-2 mt-3 text-sm font-mono opacity-50 from-neutral-500">
+            QTY
+          </p>
+          <div class="flex justify-around h-20 items-center">
+            <div class="flex text-center justify-evenly items-center w-40">
+              <button
+                class="bg-black text-white rounded-full text-lg w-8 h-8 hover:scale-110 ease-in-out duration-300"
+              >
+                -
+              </button>
+              <p class="font-mono">0</p>
+              <button
+                class="bg-black text-white rounded-full w-8 h-8 text-lg hover:scale-x-110 ease-in-out duration-300 focus:scale-110 focus:ease-in-out focus:duration-300"
+              >
+                +
+              </button>
+            </div>
+            <p class="font-bold text-2xl">₹250</p>
+          </div>
+        </section>
+        <button
+          class="flex gap-3 font-sans font-medium text-base bg-black text-white px-24 py-3.5 rounded-full m-auto focus:bg-transparent focus:text-black focus:ring-1 focus:ring-black active:bg-transparent transition duration-300 ease-in-out lg:m-6 hover:scale-x-110 ease-in-out duration-300"
+        >
+          <img class="h-6" src="images/shopping-cart (2).png" alt="" /> ADD TO
+          CART
+        </button>
+        <div class="flex items-center justify-center">
+          <label
+            for="address"
+            class="flex items-center font-mono text-sm ml-2 mt-3 flex-nowrap"
+          >
+            <img
+              src="images/location.png"
+              alt="location"
+              class="ml-1 lgt:max-w-fit"
+            />
+            Deliver to:
+          </label>
+          <input
+            class="text-sm font-mono font-500 bg-transparent capitalize min-w-60 pt-2.5 ml-1 cursor-text"
+            type="text"
+            id="address"
+            name="address"
+            placeholder=" Enter your address & pincode"
+            required
+          />
+        </div>
+        <p
+          class="text-center text-sm opacity-60 font-semibold mb-8 max-w-fit m-auto"
+        >
+          Ships in approx. 3-4 days
+        </p>
+        <p
+          class="w-10/12 m-auto text-center lh from-neutral-400 text-2xl font-sans"
+        >
+          Perfect for keeping blood sugar levels steady on a particularly
+          stressful day.
+        </p>
+      </div>
+    </div>
+
+    <!-- ribbon scroller -->
+
+    <section
+      class="ribbon-scroll flex overflow-x-auto items-center justify-center ribbon-scroller overflow-hidden mt-8"
+    >
+      <div class="ribbon-scroller overflow-hidden">
+        <div id="marqueeContainer" class="marquee-container flex gap-5">
+          <div class="card flex justify-center items-center gap-2">
+            <div class="overflow-hidden w-12 h-12">
+              <img src="images/Vegan Friendly.png" alt="vegan" class="" />
+            </div>
+            <p class="text-sm">vegan friendly</p>
+          </div>
+
+          <div class="card">
+            <div class="rounded-full overflow-hidden w-12 h-12">
+              <img
+                src="images/No added sugar.png"
+                alt="no-sugar"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="ml-4">
+              <p class="text-sm">No added sugur</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="rounded-full overflow-hidden w-12 h-12">
+              <img
+                src="images/Screenshot 2023-12-12 153829.png"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="ml-4">
+              <p class="text-sm">No added color</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="rounded-full overflow-hidden w-12 h-12">
+              <img
+                src="images/Glutten Free (1).png"
+                alt="gluten free"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="ml-4">
+              <p class="text-sm">Glutten free</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- know your food curve text-->
+    <div class="lg:flex items-center justify-around lg:mt-20">
+      <div class="know-container">
+        <div class="know-bg-imgs flex justify-between mt-12 relative">
+          <img src="images/Group 1015.png" alt="left-img" class="lg:hidden" />
+          <img src="images/Group 1005.png" alt="right-bg" class="lg:hidden" />
+        </div>
+        <div class="lg:min-w-[500px]">
+          <div class="curved-text 4">
+            <ul class="flex justify-center h-fit font-sans text-4xl font-bold">
+              <li
+                class="rotate-[-40.52deg] translate-x-[4px] translate-y-[2px]"
+              >
+                K
+              </li>
+              <li
+                class="rotate-[-33.73deg] translate-x-[5px] -translate-y-[18px]"
+              >
+                N
+              </li>
+              <li
+                class="rotate-[-26.77deg] translate-x-[8px] -translate-y-[32px]"
+              >
+                O
+              </li>
+              <li
+                class="rotate-[-19.1deg] translate-x-[11px] -translate-y-[44px]"
+              >
+                W
+              </li>
+              <li
+                class="rotate-[-13.35deg] translate-x-[14px] -translate-y-[55px]"
+              >
+                &nbsp;
+              </li>
+              <li
+                class="rotate-[-8.63deg] translate-x-[17px] -translate-y-[55px]"
+              >
+                Y
+              </li>
+              <li class="rotate-[-2deg] translate-x-[20px] -translate-y-[56px]">
+                O
+              </li>
+              <li
+                class="rotate-[4.8deg] translate-x-[22px] -translate-y-[56px]"
+              >
+                U
+              </li>
+              <li
+                class="rotate-[11.43deg] translate-x-[24px] -translate-y-[54px]"
+              >
+                R
+              </li>
+              <li
+                class="rotate-[16.22deg] translate-x-[26px] -translate-y-[56px]"
+              >
+                &nbsp;
+              </li>
+              <li
+                class="rotate-[20.62deg] translate-x-[28px] -translate-y-[46px]"
+              >
+                F
+              </li>
+              <li
+                class="rotate-[26.93deg] translate-x-[30px] -translate-y-[36px]"
+              >
+                O
+              </li>
+              <li
+                class="rotate-[33.81deg] translate-x-[30px] -translate-y-[20px]"
+              >
+                O
+              </li>
+              <li
+                class="rotate-[40.52deg] translate-x-[28px] -translate-y-[2px]"
+              >
+                D
+              </li>
+            </ul>
+          </div>
+
+          <!-- <div class=" bg-red-500 p-0 m-0 absolute centered">
+<div class="absolute bg-red-500 font-bold rotate-k text-4xl font-sans">
+<p>K</p>
+</div>
+<div class="absolute bg-gradient-to-r from-cyan-500 to-blue-500   font-bold rotate-n text-4xl font-sans">
+<p>N</p>
+</div>
+<div class="absolute bg-gradient-to-r from-lime-500 to-green-950  font-bold rotate-o-1 rotate-[] translate-x-[]">
+<p>O</p>
+</div>
+<div class="absolute bg-gradient-to-r from-lime-500 to-green-950  font-bold rotate-w text-4xl font-sans">
+<p>W</p>
+</div>
+<div class="absolute bg-gradient-to-r from-lime-500 to-green-950  font-bold rotate-gap-1 text-4xl font-sans">
+<p>&nbsp;</p>
+</div>
+<div class="absolute bg-gradient-to-r from-lime-500 to-green-950  rotate-y font-bold text-4xl font-sans">
+<p>Y</p>
+</div>
+<div class="absolute bg-gradient-to-r from-lime-500 to-green-950  rotate-o-2 font-bold text-4xl font-sans">
+<p>O</p>
+</div>
+<div class="absolute bg-gradient-to-r from-lime-500 to-green-950  rotate-u font-bold text-4xl font-sans">
+<p>U</p>
+</div>
+<div class="absolute bg-gradient-to-r from-lime-500 to-green-950  rotate-r font-bold text-4xl font-sans">
+<p>R</p>
+</div>
+<div class="absolute bg-gradient-to-r from-lime-500 to-green-950  rotate-gap-2 font-bold text-4xl font-sans">
+<p>&nbsp;</p>
+</div>
+<div class="absolute bg-gradient-to-r from-lime-500 to-green-950  rotate-f font-bold text-4xl font-sans">
+<p>F</p>
+</div>
+<div class="absolute bg-gradient-to-r from-lime-500 to-green-950  rotate-o-3 font-bold text-4xl font-sans">
+<p>O</p>
+</div>
+<div class="absolute bg-gradient-to-r from-lime-500 to-green-950  rotate-o-4 font-bold text-4xl font-sans">
+<p>O</p>
+</div>
+<div class="absolute bg-gradient-to-r from-lime-500 to-green-950  rotate-d font-bold text-4xl font-sans">
+<p>D</p>
+</div>
+</div>
+</div> -->
+          <div class="mt-8 w-7xl">
+            <p class="uppercase text-center font-mono font-bold text-base">
+              Nutrtional facts
+            </p>
+            <p class="uppercase text-center font-mono font-bold text-sm">
+              (per 100g)
+            </p>
+          </div>
+          <div class="facts-table flex flex-col space-y-4">
+            <div class="flex items-center">
+              <p class="mr-0 font-mono from-neutral-400">Energy</p>
+              <div
+                class="flex-1 justify-end border-b-2 border-dotted border-red-500 mx-2 mt-2"
+              ></div>
+              <p class="ml-0 font-mono from-neutral-400">402 kcal</p>
+            </div>
+
+            <div class="flex items-center">
+              <p class="mx-0 font-mono from-neutral-400">Fat</p>
+              <div
+                class="flex-1 border-b-2 border-dotted border-red-500 mt-2 mx-2"
+              ></div>
+              <p class="mx-0 font-mono from-neutral-400">1.6g</p>
+            </div>
+            <div class="flex items-center">
+              <p class="mr-0 font-mono from-neutral-400">Of which Saturates</p>
+              <div
+                class="flex-1 border-b-2 border-dotted border-red-500 mt-2 mx-2"
+              ></div>
+              <p class="ml-0 font-mono from-neutral-400">7.4g</p>
+            </div>
+            <div class="flex items-center">
+              <p class="mr-0 font-mono from-neutral-400">Carbohydrates</p>
+              <div
+                class="flex-1 border-b-2 border-dotted border-red-500 mt-2 mx-2"
+              ></div>
+              <p class="ml-0 font-mono from-neutral-400">9.0g</p>
+            </div>
+            <div class="flex items-center">
+              <p class="mr-0 font-mono from-neutral-400">of which Sugars</p>
+              <div
+                class="flex-1 border-b-2 border-dotted border-red-500 mt-2 mx-2"
+              ></div>
+              <p class="ml-0 font-mono from-neutral-400">1.6g</p>
+            </div>
+            <div class="flex items-center">
+              <p class="mr-0 font-mono from-neutral-400">Fibre</p>
+              <div
+                class="flex-1 border-b-2 border-dotted border-red-500 mt-2 mx-2"
+              ></div>
+              <p class="ml-0 font-mono from-neutral-400">7.5g</p>
+            </div>
+            <div class="flex items-center">
+              <p class="mr-0 font-mono from-neutral-400">Protein</p>
+              <div
+                class="flex-1 border-b-2 border-dotted border-red-500 mt-2 mx-2"
+              ></div>
+              <p class="ml-0 font-mono from-neutral-400">0.09g</p>
+            </div>
+            <div class="flex items-center">
+              <p class="mr-0 font-mono from-neutral-400">Salt</p>
+              <div
+                class="flex-1 border-b-2 border-dotted border-red-500 mt-2 mx-2"
+              ></div>
+              <p class="ml-0 font-mono from-neutral-400">0.09g</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="seeds lg:self-center">
+        <h4 class="text-center font-mono font-bold text-base mt-8">
+          WHAT'S INSIDE?
+        </h4>
+        <div class="footer flex flex-wrap items-center justify-center gap-4">
+          <div>
+            <img
+              src="images/Frame 829.png"
+              alt="sasme-seeds"
+              class="h-20 w-20 hover:scale-125 ease-in-out duration-300"
+            />
+            <p class="text-center font-mono text-sm text-wrap">Sasme seeds</p>
+          </div>
+          <div>
+            <img
+              src="images/Frame 830.png"
+              alt="sasme-seeds"
+              class="h-20 w-20 hover:scale-125 ease-in-out duration-300"
+            />
+            <p class="text-center font-mono text-sm text-wrap">Pumkin seeds</p>
+          </div>
+          <div>
+            <img
+              src="images/Frame 829.png"
+              alt="sasme-seeds"
+              class="h-20 w-20 hover:scale-125 ease-in-out duration-300"
+            />
+            <p class="text-center font-mono text-sm text-wrap">Sasme seeds</p>
+          </div>
+          <div>
+            <img
+              src="images/Frame 829.png"
+              alt="sasme-seeds"
+              class="h-20 w-20 hover:scale-125 ease-in-out duration-300"
+            />
+            <p class="text-center font-mono text-sm text-wrap">Sasme seeds</p>
+          </div>
+          <div>
+            <img
+              src="images/Frame 830.png"
+              alt="sasme-seeds"
+              class="h-20 w-20 hover:scale-125 ease-in-out duration-300"
+            />
+            <p class="text-center font-mono text-sm text-wrap">Pumkin seeds</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

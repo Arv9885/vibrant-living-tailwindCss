@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bg-main {
+  background-color: #ffd7bf;
+}
+.bg-nav {
+  background-color: #ffb88f;
+}
+/* custom.css */
+/* Custom styles */
+.star {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background-image: url("images/magic-star.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#star-container input:checked ~ .star {
+  background-image: url("images/magic-star%20(2).png");
+}
+
+/* #star-container {
+  direction: rtl;
+} */
+.font-family {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  line-height: 50px;
+  font-size: 45px;
+}
+/* center */
+.centered {
+  top: 50%;
+  left: 50%;
+
+  margin: -50px -50px;
+}
+
+/* custom animation */
+
+@keyframes ping {
+  75%,
+  100% {
+    transform: scale(1);
+    opacity: 50%;
+  }
+}
+.focus\:animate-ping-2:focus {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1);
+}
+
+/* ribbon scroller custom css */
+
+.ribbon-scroller {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee-container {
+  animation: marquee 3s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card p {
+  margin-left: 1rem;
+  font-size: 0.875rem;
+}
+
+/* know wrapper */
+
+/* know your food curved text */
+/* 
+.rotate-k {
+  top: 515px;
+  left: 110px;
+  transform: rotate(-40.52deg);
+  
+}
+
+.rotate-n {
+  top: 40px;
+  left: 31px;
+  transform: rotate(-33.73deg);
+}
+.rotate-o-1 {
+  top: 25px;
+  left: 56px;
+  transform: rotate(-26.77deg);
+}
+.rotate-w {
+  top: 15px;
+  left: 81px;
+  transform: rotate(-19.1deg);
+}
+.rotate-gap-1 {
+  top: 7px;
+  left: 114px;
+  transform: rotate(-13.35deg);
+  width: 9px;
+}
+.rotate-y {
+  top: 3px;
+  left: 126px;
+  transform: rotate(-8.63deg);
+}
+.rotate-o-2 {
+  top: 0;
+  left: 152px;
+  transform: rotate(-2deg);
+}
+.rotate-u {
+  top: 1px;
+  left: 180px;
+  transform: rotate(4.8deg);
+}
+.rotate-r {
+  top: 5px;
+  left: 207px;
+  transform: rotate(11.43deg);
+}
+.rotate-gap-2 {
+  top: 9px;
+  left: 232px;
+  transform: rotate(16.22deg);
+}
+.rotate-f {
+  top: 14px;
+  left: 246px;
+  transform: rotate(20.62deg);
+}
+.rotate-o-3 {
+  top: 22px;
+  left: 264px;
+  transform: rotate(26.93deg);
+}
+.rotate-o-4 {
+  top: 35px;
+  left: 288px;
+  transform: rotate(33.81deg);
+}
+.rotate-d {
+  top: 50px;
+  left: 309px;
+  transform: rotate(40.52deg);
+} */
+
+/* table */
+
+.facts-table,
+.footer {
+  max-width: 90%;
+  margin: auto;
+}
+/*  */
